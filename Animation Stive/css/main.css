@@ -1,0 +1,159 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-image: url(https://i.ytimg.com/vi/aBkTkxKDduc/maxresdefault.jpg) ;
+  background-position: center;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+.container {
+  perspective-origin: top center;
+  width: 100%;
+  height: 100%;
+}
+.steave{
+  margin-top: 10%;
+  perspective: 1000px;
+}
+.rotate-steave{
+  -webkit-transform:  rotateY(50deg);
+  -ms-transform:  rotateY(50deg);
+  -o-transform:  rotateY(50deg);
+  transform:  rotateY(50deg);
+}
+.steave-head {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 100px;
+  transform-style: preserve-3d;
+  z-index: 3;
+}
+.steave-body{
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+.steave-head-cube {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #FFF;
+}
+.steave-body-cube{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+.steave-head-left{
+  transform: rotateY(-90deg);
+  transform-origin: top left;
+}
+.steave-body-left{
+  transform: rotateY(-90deg) translateX(25px) translateZ(-50px);
+  transform-origin: top left;
+  width: 50px;
+}
+.steave-head-right{
+  transform: rotateY(90deg);
+  transform-origin: top right;
+}
+.steave-body-right {
+  transform: rotateY(90deg) translateX(-25px) translateZ(100px);
+  transform-origin: top right;
+  width: 50px;
+}
+.steave-head-front{
+  transform: translateZ(100px);
+  background-image: url(http://s011.radikal.ru/i318/1411/fb/ed5499da8238.jpg);
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+  background-position: center;
+}
+.steave-body-front{
+  transform: translateZ(75px) translateX(50px);
+}
+
+.steave-head-back {
+  transform: translateZ(0px);
+}
+.steave-body-back {
+  transform: translateZ(25px) translateX(50px);
+}
+.steave-left-leg, .steave-right-leg{
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+.steave-right-leg-cube{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 50px;
+  height: 150px;
+  background-color: green; 
+}
+.steave-left-leg-cube{
+  position: absolute;
+  top: 100px;
+  left: 50;
+  width: 50px;
+  height: 150px;
+  background-color: green;
+}
+.steave-right-leg-left, .steave-left-leg-left, .steave-right-arm-left, .steave-left-arm-left{
+  transform: rotateY(-90deg) translateX(25px) translateZ(-50px);
+  transform-origin: top left;
+  width: 50px;
+}
+.steave-right-leg-right, .steave-left-leg-right, .steave-right-arm-right, .steave-left-arm-right {
+  transform: rotateY(90deg) translateX(-25px) translateZ(50px);
+  transform-origin: top right;
+  width: 50px;
+}
+.steave-right-leg-front, .steave-left-leg-front, .steave-right-arm-front, .steave-left-arm-front{
+  transform: translateZ(75px) translateX(50px);
+}
+.steave-right-leg-back, .steave-left-leg-back, .steave-right-arm-back, .steave-left-arm-back{
+  transform: translateZ(25px) translateX(50px);
+}
+.steave-right-arm{
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+.steave-right-arm-cube{
+  position: absolute;
+  top:0;
+  left: 100px;
+  width: 50px;
+  height: 150px;
+  background-color: gray;
+}
+.steave-left-arm{
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  transform-style: preserve-3d;
+  z-index: 3;
+}
+.steave-left-arm-cube{
+  position: absolute;
+  top:0;
+  left: -70px;
+  width: 50px;
+  height: 150px;
+  background-color: gray;
+}
+
+
+
+

@@ -1,0 +1,79 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+
+}
+.section{
+  height: 100vh;
+  background-color: #7b1fa2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-btn{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
+}
+.menu-btn span, 
+.menu-btn span::after,
+.menu-btn span::before{
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  margin-left: -10px;
+  left:50%;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+}
+.menu-btn span::after, .menu-btn span::before{
+  content: "";
+  display: block;
+  -webkit-transition:  1s;
+  -o-transition:  1s;
+  transition:  1s;
+}
+.menu-btn span::before{
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.menu-btn span::after{
+  -webkit-transform: translateY(5px);
+   -ms-transform: translateY(5px);
+   -o-transform: translateY(5px);
+   transform: translateY(5px); 
+}
+/*.menu-btn-active{
+  /*height: 0;
+
+}*/
+.menu-btn-active span:before{
+  -webkit-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+  width: 10px;
+  -webkit-transform-origin:  left bottom;
+  -moz-transform-origin:  left bottom;
+  -ms-transform-origin:  left bottom;
+  -o-transform-origin:  left bottom;
+  transform-origin:  left bottom;
+}
+.menu-btn-active span:after{
+  -webkit-transform:  rotate(35deg);
+  -ms-transform:  rotate(35deg);
+  -o-transform:  rotate(35deg);
+  transform:  rotate(35deg);
+   width: 10px;
+  -webkit-transform-origin:  left top;
+  -moz-transform-origin:  left top;
+  -ms-transform-origin:  left top;
+  -o-transform-origin:  left top;
+  transform-origin:  left top;
+}

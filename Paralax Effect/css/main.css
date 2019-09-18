@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+html
+{
+  height: 100%;
+  overflow: hidden;
+  
+}
+body
+{
+
+  color:white;
+  margin: 0;
+  padding: 0;
+  perspective:1px;
+ -webkit-transform-style:preserve-3d;
+     -moz-transform-style:preserve-3d;
+          transform-style:preserve-3d;
+  -ms-overflow-y: scroll;
+      overflow-y: scroll;
+  -ms-overflow-x: hidden;
+      overflow-x: hidden;
+  font-family: 'Amatic SC', cursive;
+}
+header
+{
+  box-sizing:border-box;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 30%;
+  -webkit-transform-style: inherit;
+     -moz-transform-style: inherit;
+          transform-style: inherit;
+  width: 100vw;
+}
+header::before
+{
+  content:"";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-transform-origin: center;
+     -moz-transform-origin: center;
+      -ms-transform-origin: center;
+       -o-transform-origin: center;
+          transform-origin: center;
+  min-height: 100vh;
+  background-image: url("https://hdwallpaperim.com/wp-content/uploads/2017/08/23/459496-Darth_Vader-Star_Wars-748x421.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  
+  /*Paralax*/
+  -webkit-transform: translateZ(-2px) scale(3);
+     -moz-transform: translateZ(-2px) scale(3);
+      -ms-transform: translateZ(-2px) scale(3);
+       -o-transform: translateZ(-2px) scale(3);
+          transform: translateZ(-2px) scale(3);
+}
+header h1
+{
+  margin-top: -100px;
+  font-size: 92px;
+}
+header h2
+{
+  font-size: 62px;
+}
